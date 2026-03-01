@@ -10,4 +10,7 @@ print('Availabe Streams :')
 for stream in yt.streams.filter(progressive=True):
     print(stream)
 
-    
+
+stream = yt.stream.get_highest_resolution()
+print('Downloading :', yt.title)
+stream.download()
