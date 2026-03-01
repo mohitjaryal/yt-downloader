@@ -6,4 +6,8 @@ url = input('Enter URL :')
 yt = Youtube(url)
 
 print('Title :',yt.title)
-print('')
+print('Availabe Streams :')
+for stream in yt.streams.filter(progressive=True):
+    print(stream)
+
+    
