@@ -1,9 +1,9 @@
-from pytube import Youtube
+from pytube import YouTube
 
 url = input('Enter URL :')
 
 # yt object
-yt = Youtube(url)
+yt = YouTube(url)
 
 print('Title :',yt.title)
 print('Availabe Streams :')
